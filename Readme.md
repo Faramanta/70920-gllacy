@@ -1,6 +1,6 @@
 # Личный проект «Глейси»
 
-* Студент: [Kate M](https://up.htmlacademy.ru/htmlcss/13/user/70920).
+* Студентка: [Kate M](https://up.htmlacademy.ru/htmlcss/13/user/70920).
 *Наставник: [Шамиль Алисултанов] (https://htmlacademy.ru/profile/id13948).
 
 ---
