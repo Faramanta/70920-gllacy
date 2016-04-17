@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GllacyShop</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="index-logo">
+            <img src="http://placehold.it/153x63" width="153" height="63" alt="">
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><span>Каталог</span></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">О Компании</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <ul>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Вход</a></li>
+                <li><a href="#">Пусто</a></li>
+            </ul>
+        </div>
+        <div class="header-schedule">
+            <p>С 10 до 20, ежедневно</p>
+            <p class="header-phone">8 812 450-25-25</p>
+        </div>
+    </header>
+    
+    <main>
+        <div class="breadcrumbs">
+            <ul>
+                <li><a class="breadcrumbs-link" href="#">Главная</a></li>
+                <li><a class="breadcrumbs-link" href="#">Каталог</a></li>
+                <li><span>Сливочное</span></li>
+            </ul>
+        </div>
+        <h1>Сливочное мороженое</h1>
+        <div class="filter">
+            <form name="filter-product" method="post">
+                <p><label for="pop">Сортировка:</label></p>
+                <select>
+                    <option value="pop" id="pop" name="pop">По популярности</option>
+                </select>
+                <p><label for="price">Цена: 100 руб. – 500 руб.</label></p>
+                <input type="range" id="price" name="price">                               <!--Совсем не уверена-->
+                <p>Жирность:</p>
+                <label><input type="radio" name="fatness" value="0">0%</label>
+                <label><input type="radio" name="fatness" value="10">до 10%</label>
+                <label><input type="radio" name="fatness" value="30">до 30%</label>
+                <label><input type="radio" name="fatness" value="more-30">выше 30%</label>
+                <p>Наполнители:</p>
+                <label><input type="checkbox" name="filler" value="choco">шоколадные</label>
+                <label><input type="checkbox" name="filler" value="sugar">сахарные присыпки</label>
+                <label><input type="checkbox" name="filler" value="fruit">фрукты</label>
+                <label><input type="checkbox" name="filler" value="syrups">сиропы</label>
+                <label><input type="checkbox" name="filler" value="jams">джемы</label>
+            </form>
+        </div>
+
+        <div class="product-list">
+            <article class="product-item">
+                <img src="http://placehold.it/60x60" width="60" height="60" alt=Хит>
+                <img src="http://placehold.it/267x267" width="267" height="267" alt=Хит>
+                <p class="item-price">310 р/кг</p>
+                <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+            </article>
+            <article class="product-item">
+                <img src="http://placehold.it/60x60" width="60" height="60" alt=Хит>
+                <img src="http://placehold.it/267x267" width="267" height="267" alt=Хит>
+                <p class="item-price">380 р/кг</p>
+                <h3>Сливочно-кофейное с кусочками шоколада</h3>
+            </article>
+            <article class="product-item">
+                <img src="http://placehold.it/60x60" width="60" height="60" alt=Хит>
+                <img src="http://placehold.it/267x267" width="267" height="267" alt=Хит>
+                <p class="item-price">355 р/кг</p>
+                <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            </article>
+            <article class="product-item">
+                <img src="http://placehold.it/60x60" width="60" height="60" alt="Хит">
+                <img src="http://placehold.it/267x267" width="267" height="267" alt="Хит">
+                <p class="item-price">415 р/кг</p>
+                <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+            </article>
+
+            <article class="product-item">
+                <img src="http://placehold.it/60x60" width="60" height="60" alt=Хит>
+                <img src="http://placehold.it/267x267" width="267" height="267" alt=Хит>
+                <p class="item-price">325 р/кг</p>
+                <h3>Сливочное с брусничным джемом</h3>
+            </article>
+            <article class="product-item">
+                <img src="http://placehold.it/60x60" width="60" height="60" alt=Хит>
+                <img src="http://placehold.it/267x267" width="267" height="267" alt=Хит>
+                <p class="item-price">410 р/кг</p>
+                <h3>Сливочно-черничное с цельными ягодами черники</h3>
+            </article>
+            <article class="product-item">
+                <img src="http://placehold.it/60x60" width="60" height="60" alt=Хит>
+                <img src="http://placehold.it/267x267" width="267" height="267" alt=Хит>
+                <p class="item-price">375 р/кг</p>
+                <h3>Сливочно-лимонное с карамельной присыпкой</h3>
+            </article>
+            <article class="product-item">
+                <img src="http://placehold.it/60x60" width="60" height="60" alt="Хит">
+                <img src="http://placehold.it/267x267" width="267" height="267" alt="Хит">
+                <p class="item-price">320 р/кг</p>
+                <h3>Сливочное с шоколадной стружкой</h3>
+            </article>
+
+            <article class="product-item">
+                <img src="http://placehold.it/60x60" width="60" height="60" alt=Хит>
+                <img src="http://placehold.it/267x267" width="267" height="267" alt=Хит>
+                <p class="item-price">440 р/кг</p>
+                <h3>Сливочно-ванильное с кусочками шоколада</h3>
+            </article>
+            <article class="product-item">
+                <img src="http://placehold.it/60x60" width="60" height="60" alt=Хит>
+                <img src="http://placehold.it/267x267" width="267" height="267" alt=Хит>
+                <p class="item-price">435 р/кг</p>
+                <h3>Сливочноe с ментоловым сиропом</h3>
+            </article>
+            <article class="product-item">
+                <img src="http://placehold.it/60x60" width="60" height="60" alt=Хит>
+                <img src="http://placehold.it/267x267" width="267" height="267" alt=Хит>
+                <p class="item-price">355 р/кг</p>
+                <h3>Сливочное с кусочками черного шоколада</h3>
+            </article>
+            <article class="product-item">
+                <img src="http://placehold.it/60x60" width="60" height="60" alt="Хит">
+                <img src="http://placehold.it/267x267" width="267" height="267" alt="Хит">
+                <p class="item-price">420 р/кг</p>
+                <h3>Сливочное с мятным сиропом</h3>
+            </article>
+        </div>
+
+        <ul class="pager">
+            <li><span>1</span></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </ul>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-social">
+            <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        </div>
+
+        <div class="footer-nav">
+            <div class="footer-nav-left">
+                <a href="#">Для поставщиков</a>
+                <a href="#">О производстве</a>
+            </div>
+            <div class="right">
+                <a href="#">Наши документы</a>
+                <a href="#">Экологические стандарты</a>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <img src="http://placehold.it/107x37" width="107" height="37" alt="">
+            <p>Сделано в HTML Academy © 2016</p>
+        </div>
+    </footer>
+</body>
+</html>
