@@ -10,15 +10,15 @@
         <img src="http://placehold.it/153x63" width="153" height="63" alt="">
     </div>
     <nav class="main-navigation">
-        <div>
+        <ul>
             <li><span>Каталог</span></li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О Компании</a></li>
-        </div>
+        </ul>
     </nav>
 
-    <div class="header-right-top">
-        <div>
+    <div class="header-right">
+        <div class="header-right-top">
             <div class="header-search">
                 <div class="icon icon-search">Search</div>
                 <div class="searc-modal">
@@ -35,9 +35,10 @@
                     <input type="submit" value="Войти">
                     <a href="#">Забыли пароль</a>
                     <a href="#">Новая регистрация</a>
+                </form>
             </div>
             <div class="header-cart">
-                <div class="icon icon-cart">Пусто</div>
+                <a href="#" class="icon icon-cart">Пусто</a>
                 <div class="cart-modal">
                     <table>
                         <tr>
@@ -76,15 +77,16 @@
                 <li><span>Сливочное</span></li>
             </ul>
         </div>
+
         <h1>Сливочное мороженое</h1>
         <div class="filter">
             <form name="filter-product" method="post">
                 <p><label for="pop">Сортировка:</label></p>
                 <select>
-                    <option value="pop" id="pop" name="pop">по популярности</option>
-                    <option value="pop" id="pop" name="pop">сначала недорогие</option>
-                    <option value="pop" id="pop" name="pop">сначала дорогие</option>
-                    <option value="pop" id="pop" name="pop">по жирности</option>
+                    <option value="pop" id="pop">по популярности</option>
+                    <option value="cheap" id="cheap">сначала недорогие</option>
+                    <option value="pop" id="expensive">сначала дорогие</option>
+                    <option value="pop" id="fatness">по жирности</option>
                 </select>
                 <p><label for="price">Цена: 100 руб. – 500 руб.</label></p>
                 <input type="range" id="price" name="price">                               <!--Совсем не уверена-->
@@ -169,13 +171,13 @@
         </div>
 
         <ul class="pager">
-            <li><span><img srs=""></span></li>
+            <li class="pager__first"><span></span></li>
             <li><span>1</span></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
             <li><a href="#">5</a></li>
-            <li><a><img srs=""></a></li>
+            <li class="pager__last"><a></a></li>
         </ul>
     </main>
 
