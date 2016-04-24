@@ -83,8 +83,8 @@ h2 {
     /*Только для оформления сетки*/
     outline: 2px solid green;
     background: rgba(0, 128, 0, 0.2);
-
 }
+
 .header-search{
     display: inline-block;
 
@@ -143,7 +143,6 @@ h2 {
 .main{
     padding-top: 0;
 }
-
 
 .action {
     height: 230px;
@@ -282,6 +281,7 @@ h2 {
 
 .main-footer{
     padding-top: 18px;
+
     /* Только для оформления сетки */
     min-height: 103px;
     background: rgba(255, 45, 82, 0.2);
@@ -301,7 +301,7 @@ h2 {
 
 .footer-nav{
     float: left;
-    margin: 0px;
+    margin: 0;
     margin-top: 18px;
     width: 560px;
 
@@ -327,7 +327,6 @@ h2 {
 
 .breadcrumbs{
 
-
     /* Только для оформления сетки */
     min-height: 16px;
     outline: 2px solid yellow;
@@ -351,9 +350,9 @@ h2 {
     outline: 2px solid yellow;
     background: rgba(234, 255, 45, 0.2);
 }
+
 .product-catalog{
     margin-bottom: 35px;
-
 }
 
 .pager{
