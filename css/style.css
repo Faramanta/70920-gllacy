@@ -3,8 +3,17 @@ body {
     font-size: 16px;
     line-height: 22px;
     font-weight: normal;
+    margin: 0;
+    padding: 0;
     color: #ffffff;
-    background: #88a093;
+    background: #88a093 /*url("../img/gllacy-catalog-1200.jpg") no-repeat 50% 2px*/;
+    background-size: 1200px auto;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 h1 {
@@ -19,5 +28,341 @@ h2 {
     font-weight: bold;
 }
 
+.container{
+    width: 1146px;
+    margin: 0 auto;
+
+    /* Только для оформления сетки */
+    background: rgba(255, 45, 82, 0.2);
+    outline: 2px solid red;
+}
+
+.main-header{
+    position: relative;
+    padding-top: 10px;
+    min-height: 74px;
+}
+
+.header-logo{
+    width: 154px;
+    height: 64px;
+    display: inline-block;
+    vertical-align: middle;
+
+    /* Только для оформления сетки */
+    outline: 2px solid yellow;
+    background: rgba(234, 255, 45, 0.2);
+}
+
+.main-navigation{
+    width: 700px;
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 64px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid yellow;
+    background: rgba(234, 255, 45, 0.2);
+}
+
+.header-right{
+    float: right;
+    min-width: 280px;
+
+    /* Только для оформления сетки */
+    min-height: 64px;
+    outline: 2px solid yellow;
+    background: rgba(234, 255, 45, 0.2);
+}
+
+.header-right-top{
+    min-height: 32px;
+    margin-top: 14px;
+    text-align: right;
+
+    /*Только для оформления сетки*/
+    outline: 2px solid green;
+    background: rgba(0, 128, 0, 0.2);
+
+}
+.header-search{
+    display: inline-block;
+
+    /* Только для оформления сетки */
+    outline: 2px solid blue;
+    background: rgba(0, 0, 255, 0.2);
+}
+
+.header-login{
+    display: inline-block;
+    margin-left: 10px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid blue;
+    background: rgba(0, 0, 255, 0.2);
+}
+
+.header-cart{
+    display: inline-block;
+    margin-left: 10px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid blue;
+    background: rgba(0, 0, 255, 0.2);
+}
+
+.header-right-bottom{
+    position: absolute;
+    right: 0;
+    min-width: 175px;
+
+    /* Только для оформления сетки */
+    min-height: 50px;
+    outline: 2px solid blue;
+    background: rgba(0, 0, 255, 0.2);
+}
+
+.slider{
+    height: 584px;
+    padding-top: 0;
+    margin-bottom: -20px;
+
+    /* Только для оформления сетки */
+    background: rgba(255, 45, 82, 0.2);
+    outline: 2px solid red;
+}
+.slider img{
+    display: block;
+    margin: 0 auto;
+
+    /* Только для оформления сетки */
+    outline: 2px solid yellow;
+    background: rgba(234, 255, 45, 0.2);
+}
+
+.main{
+    padding-top: 0;
+}
 
 
+.action {
+    height: 230px;
+    width: 560px;
+    margin-bottom: 36px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid yellow;
+    background: rgba(234, 255, 45, 0.2);
+}
+
+.action-left{
+    float: left;
+
+    /* Только для оформления сетки */
+    outline: 2px solid blue;
+    background: rgba(0, 0, 255, 0.2);
+}
+
+.action-right{
+    float: right;
+
+    /* Только для оформления сетки */
+    outline: 2px solid blue;
+    background: rgba(0, 0, 255, 0.2);
+}
+
+.product-list{
+    /*margin-bottom: 10px;*/
+
+    /* Только для оформления сетки */
+    outline: 2px solid yellow;
+    background: rgba(234, 255, 45, 0.2);
+}
+
+.product-item{
+    display: inline-block;
+    vertical-align: top;
+    width: 267px;
+    min-height: 330px;
+    margin-right: 22px;
+    margin-bottom: 25px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid blue;
+    background: rgba(0, 0, 255, 0.2);
+}
+
+.product-item:nth-child(4n){
+    margin-right: 0;
+}
+
+.about{
+    margin-bottom: 38px;
+    min-height: 248px;
+    padding: 30px 20px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid yellow;
+    background: rgba(234, 255, 45, 0.2);
+}
+
+.about-left{
+    float: left;
+    width: 540px;
+
+    /* Только для оформления сетки */
+    min-height: 78px;
+    outline: 2px solid blue;
+    background: rgba(0, 0, 255, 0.2);
+}
+
+.about-right{
+    float: right;
+    width: 540px;
+
+    /* Только для оформления сетки */
+    min-height: 78px;
+    outline: 2px solid blue;
+    background: rgba(0, 0, 255, 0.2);
+}
+
+.about-top{
+    margin-bottom: 10px;
+}
+
+.news-subscribe{
+    margin-bottom: 38px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid yellow;
+    background: rgba(234, 255, 45, 0.2);
+}
+
+.news{
+    float: left;
+    width: 560px;
+
+    /* Только для оформления сетки */
+    min-height: 220px;
+    outline: 2px solid blue;
+    background: rgba(0, 0, 255, 0.2);
+}
+
+.subscribe{
+    float: right;
+    width: 560px;
+
+    /* Только для оформления сетки */
+    min-height: 220px;
+    outline: 2px solid blue;
+    background: rgba(0, 0, 255, 0.2);
+}
+
+.contacts-main{
+    position: relative;
+    width: 1200px;
+    right: 27px;
+
+    /* Только для оформления сетки */
+    min-height: 430px;
+    outline: 2px solid yellow;
+    background: rgba(234, 255, 45, 0.2);
+}
+
+.contacts{
+    position: absolute;
+    top: 62px;
+    right: 27px;
+    min-height: 304px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid blue;
+    background: rgba(0, 0, 255, 0.2);
+}
+
+.main-footer{
+    padding-top: 18px;
+    /* Только для оформления сетки */
+    min-height: 103px;
+    background: rgba(255, 45, 82, 0.2);
+    outline: 2px solid red;
+}
+
+.footer-social{
+    float: left;
+    width: 186px;
+    margin-top: 18px;
+
+    /* Только для оформления сетки */
+    min-height: 38px;
+    outline: 2px solid yellow;
+    background: rgba(234, 255, 45, 0.2);
+}
+
+.footer-nav{
+    float: left;
+    margin: 0px;
+    margin-top: 18px;
+    width: 560px;
+
+    /* Только для оформления сетки */
+    min-height: 38px;
+    outline: 2px solid yellow;
+    background: rgba(234, 255, 45, 0.2);
+}
+
+.footer-copyright{
+    float: right;
+    width: 267px;
+
+    /* Только для оформления сетки */
+    min-height: 60px;
+    outline: 2px solid yellow;
+    background: rgba(234, 255, 45, 0.2);
+}
+
+.main-catalog{
+    padding-top: 18px;
+}
+
+.breadcrumbs{
+
+
+    /* Только для оформления сетки */
+    min-height: 16px;
+    outline: 2px solid yellow;
+    background: rgba(234, 255, 45, 0.2);
+}
+
+.caption{
+    margin: 0;
+
+    /* Только для оформления сетки */
+    min-height: 16px;
+    outline: 2px solid yellow;
+    background: rgba(234, 255, 45, 0.2);
+}
+
+.filter{
+    margin-bottom: 30px;
+
+    /* Только для оформления сетки */
+    min-height: 165px;
+    outline: 2px solid yellow;
+    background: rgba(234, 255, 45, 0.2);
+}
+.product-catalog{
+    margin-bottom: 35px;
+
+}
+
+.pager{
+    float: right;
+    height: 30px;
+    width: 190px;
+    margin-bottom: 28px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid yellow;
+    background: rgba(234, 255, 45, 0.2);
+}

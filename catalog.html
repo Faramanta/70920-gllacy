@@ -6,80 +6,81 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="main-header">
-    <div class="header-logo">
-        <img src="img/logo.png" width="154" height="64" alt="Глейси">
-    </div>
-    <nav class="main-navigation">
-        <ul>
-            <li><span>Каталог</span></li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О Компании</a></li>
-        </ul>
-    </nav>
 
-    <div class="header-right">
-        <div class="header-right-top">
-            <div class="header-search">
-                <div class="icon icon-search">Search</div>
-                <div class="searc-modal">
-                    <form name="search">
-                        <input type="text" placeholder="что ищем">
-                    </form>
+    <header class="main-header container clearfix">
+        <div class="header-logo">
+            <a href="index.html"><img src="img/logo.png" width="154" height="64" alt="Глейси">
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><span>Каталог</span></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">О Компании</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <div class="header-right-top">
+                <div class="header-search">
+                    <div class="icon icon-search">Search</div>
+                    <div class="search-modal">
+                        <!--<form name="search">-->
+                            <!--<input type="text" placeholder="что ищем">-->
+                        <!--</form>-->
+                    </div>
                 </div>
-            </div>
-            <div class="header-login">
-                <div class="icon icon-enter">Вход</div>
-                <form name="avtorization" method="post">
-                    <input type="email" placeholder="Электронная почта">
-                    <input type="password" placeholder="Пароль">
-                    <input type="submit" value="Войти">
-                    <a href="#">Забыли пароль</a>
-                    <a href="#">Новая регистрация</a>
-                </form>
-            </div>
-            <div class="header-cart">
-                <a href="#" class="icon icon-cart">Пусто</a>
-                <div class="cart-modal">
-                    <table>
-                        <tr>
-                            <td><img src="img/cart-modal1.png"></td>
-                            <td>Пломбир с апельсиновым джемом</td>
-                            <td>1,5 кг х <span>200 руб.</span></td>
-                            <td>300 руб.</td>
-                        </tr>
-                        <tr>
-                            <td><img src="img/cart-modal2.png"></td>
-                            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                            <td>1,5 кг х <span>300 руб.</span></td>
-                            <td>450 руб.</td>
-                        </tr>
-                    </table>
-                    <hr>
-                    <p>Итого:</p>
-                    <p>750 руб.</p>
-                    <a>Оформить заказ</a>
+                <div class="header-login">
+                    <div class="icon icon-enter">Вход</div>
+                    <!--<form name="avtorization" method="post">-->
+                        <!--<input type="email" placeholder="Электронная почта">-->
+                        <!--<input type="password" placeholder="Пароль">-->
+                        <!--<input type="submit" value="Войти">-->
+                        <!--<a href="#">Забыли пароль</a>-->
+                        <!--<a href="#">Новая регистрация</a>-->
+                    <!--</form>-->
+                </div>
+                <div class="header-cart">
+                    <a href="#" class="icon icon-cart">Пусто</a>
+                    <div class="cart-modal">
+                        <!--<table>-->
+                            <!--<tr>-->
+                                <!--<td><img src="img/cart-modal1.png"></td>-->
+                                <!--<td>Пломбир с апельсиновым джемом</td>-->
+                                <!--<td>1,5 кг х <span>200 руб.</span></td>-->
+                                <!--<td>300 руб.</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td><img src="img/cart-modal2.png"></td>-->
+                                <!--<td>Клубничный пломбир с присыпкой из белого шоколада</td>-->
+                                <!--<td>1,5 кг х <span>300 руб.</span></td>-->
+                                <!--<td>450 руб.</td>-->
+                            <!--</tr>-->
+                        <!--</table>-->
+                        <!--<hr>-->
+                        <!--<p>Итого:</p>-->
+                        <!--<p>750 руб.</p>-->
+                        <!--<a>Оформить заказ</a>-->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="header-right-bottom">
-        <p class="header-time">С 10 до 20, ежедневно</p>
-        <p class="header-phone">8 812 450-25-25</p>
-    </div>
-</header>
+        <div class="header-right-bottom">
+            <p class="header-time">С 10 до 20, ежедневно</p>
+            <p class="header-phone">8 812 450-25-25</p>
+        </div>
+    </header>
 
-    <main>
+    <main class="main main-catalog container clearfix">
         <div class="breadcrumbs">
             <ul>
-                <li><a class="breadcrumbs-link" href="#">Главная</a></li>
+                <li><a class="breadcrumbs-link" href="index.html">Главная</a></li>
                 <li><a class="breadcrumbs-link" href="#">Каталог</a></li>
                 <li><span>Сливочное</span></li>
             </ul>
         </div>
 
-        <h1>Сливочное мороженое</h1>
+        <h1 class="caption">Сливочное мороженое</h1>
         <div class="filter">
             <form name="filter-product" method="post">
                 <p><label for="sort">Сортировка:</label></p>
@@ -106,7 +107,7 @@
             </form>
         </div>
 
-        <div class="product-list">
+        <div class="product-list product-catalog">
             <article class="product-item">
                 <img src="img/product-item1.jpg" width="267" height="267" alt="">
                 <p class="product-item__price">310 р<span>/кг</span></p>
@@ -182,7 +183,7 @@
         </ul>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
         <div class="footer-social">
             <a class="social-btn social-btn-tw" href="#">Твиттер</a>
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
@@ -195,15 +196,15 @@
                 <a href="#">Для поставщиков</a>
                 <a href="#">О производстве</a>
             </div>
-            <div class="right">
+            <div class="footer-nav-right">
                 <a href="#">Наши документы</a>
                 <a href="#">Экологические стандарты</a>
             </div>
         </div>
 
         <div class="footer-copyright">
-            <a href=""><img src="img/htmlacademy-logo.png" width="108" height="38" alt=""></a>
-            <p>Сделано в HTML Academy © 2016</p>
+            <!--<a href=""><img src="img/htmlacademy-logo.png" width="108" height="38" alt=""></a>-->
+            <!--<p>Сделано в HTML Academy © 2016</p>-->
         </div>
     </footer>
 </body>
