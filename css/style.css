@@ -198,7 +198,7 @@ h2 {
 .about{
     margin-bottom: 38px;
     min-height: 248px;
-    padding: 30px 20px;
+    padding: 30px 0;
 
     /* Только для оформления сетки */
     outline: 2px solid yellow;
@@ -208,6 +208,7 @@ h2 {
 .about-left{
     float: left;
     width: 540px;
+    margin-left: 20px;
 
     /* Только для оформления сетки */
     min-height: 78px;
@@ -218,7 +219,7 @@ h2 {
 .about-right{
     float: right;
     width: 540px;
-
+    margin-right: 20px;
     /* Только для оформления сетки */
     min-height: 78px;
     outline: 2px solid blue;
@@ -259,7 +260,7 @@ h2 {
 
 .contacts-main{
     position: relative;
-    width: 1200px;
+    width: 100%;
     right: 27px;
 
     /* Только для оформления сетки */
