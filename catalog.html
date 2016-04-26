@@ -15,7 +15,7 @@
 
             <nav class="main-navigation">
                 <ul>
-                    <!--<li><a href="#">Каталог</a>-->
+                    <li><a href="#">Каталог</a>
                     <!--<ul>-->
                     <!--<li><a href="#">Новинки</a></li>-->
                     <!--<li><a href="catalog.html">Сливочное</a></li>-->
@@ -23,9 +23,9 @@
                     <!--<li><a href="#">Фруктовый лед</a></li>-->
                     <!--<li><a href="#">Мелорин</a></li>-->
                     <!--</ul>-->
-                    <!--</li>-->
-                    <!--<li><a href="#">Доставка и оплата</a></li>-->
-                    <!--<li><a href="#">О Компании</a></li>-->
+                    </li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">О Компании</a></li>
                 </ul>
             </nav>
 
@@ -100,27 +100,42 @@
         <div class="filter">
             <div class="container">
                 <form name="filter-product" method="post">
-                    <p><label for="sort">Сортировка:</label></p>
-                    <select id="sort">
-                        <option value="pop" id="pop">по популярности</option>
-                        <option value="cheap" id="cheap">сначала недорогие</option>
-                        <option value="pop" id="expensive">сначала дорогие</option>
-                        <option value="pop" id="fatness">по жирности</option>
-                    </select>
-                    <p><label for="price">Цена: 100 руб. – 500 руб.</label></p>
-                    <input type="range" id="price" name="price">
-                    <p>Жирность:</p>
-                    <label><input type="radio" name="fatness" value="0">0%</label>
-                    <label><input type="radio" name="fatness" value="10">до 10%</label>
-                    <label><input type="radio" name="fatness" value="30">до 30%</label>
-                    <label><input type="radio" name="fatness" value="more-30">выше 30%</label>
-                    <p>Наполнители:</p>
-                    <label><input type="checkbox" name="filler">шоколадные</label>
-                    <label><input type="checkbox" name="filler">сахарные присыпки</label>
-                    <label><input type="checkbox" name="filler">фрукты</label>
-                    <label><input type="checkbox" name="filler">сиропы</label>
-                    <label><input type="checkbox" name="filler">джемы</label>
-                    <input type="submit" value="применить">
+                    <div class="filter-top clearfix">
+                        <div class="filter-select">
+                            <p><label for="sort">Сортировка:</label></p>
+                            <select id="sort">
+                                <option value="pop" id="pop">по популярности</option>
+                                <option value="cheap" id="cheap">сначала недорогие</option>
+                                <option value="pop" id="expensive">сначала дорогие</option>
+                                <option value="pop" id="fatness">по жирности</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-price">
+                            <p><label for="price">Цена: 100 руб. – 500 руб.</label></p>
+
+                        </div>
+
+                        <div class="filter-radio">
+                            <p>Жирность:</p>
+                            <label><input type="radio" name="fatness" value="0">0%</label>
+                            <label><input type="radio" name="fatness" value="10">до 10%</label>
+                            <label><input type="radio" name="fatness" value="30">до 30%</label>
+                            <label><input type="radio" name="fatness" value="more-30">выше 30%</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-bottom clearfix">
+                        <div class="filter-checkbox">
+                            <p>Наполнители:</p>
+                            <label><input type="checkbox" name="filler">шоколадные</label>
+                            <label><input type="checkbox" name="filler">сахарные присыпки</label>
+                            <label><input type="checkbox" name="filler">фрукты</label>
+                            <label><input type="checkbox" name="filler">сиропы</label>
+                            <label><input type="checkbox" name="filler">джемы</label>
+                        </div>
+                        <input type="submit" value="применить">
+                    </div>
                 </form>
             </div>
         </div>
