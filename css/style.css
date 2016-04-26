@@ -215,7 +215,7 @@ h2 {
     outline: 2px solid red;
 }
 
-.about-left{
+.about-left-top, .about-left-bottom{
     float: left;
     width: 540px;
     margin-left: 20px;
@@ -226,7 +226,7 @@ h2 {
     background: rgba(0, 0, 255, 0.2);
 }
 
-.about-right{
+.about-right-top, .about-right-bottom{
     float: right;
     width: 540px;
     margin-right: 20px;
@@ -236,7 +236,7 @@ h2 {
     background: rgba(0, 0, 255, 0.2);
 }
 
-.about-top{
+.about-right-top, .about-left-top{
     margin-bottom: 10px;
 }
 
@@ -279,9 +279,7 @@ h2 {
 }
 
 .contacts{
-    position: absolute;
-    top: 62px;
-    right: 27px;
+    float: left;
     min-height: 304px;
 
     /* Только для оформления сетки */
