@@ -277,7 +277,7 @@ h2 {
 }
 
 .contacts{
-    float: left;
+    float: right;
     min-height: 304px;
 
     /* Только для оформления сетки */
