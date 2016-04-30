@@ -1,13 +1,15 @@
 body {
-    font-family: Roboto;
+    min-width: 1200px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    background: #849d8f;
     color: #ffffff;
-    background: #88a093 /*url("../img/gllacy-catalog-1200.jpg") no-repeat 50% 2px*/;
-    background-size: 1200px auto;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*background-size: 1200px auto;*/
+
 }
 
 .clearfix::after{
@@ -34,11 +36,11 @@ h2 {
 
     /* Только для оформления сетки */
     outline: 2px solid yellow;
-    background: rgba(234, 255, 45, 0.2);
+    /*background: rgba(234, 255, 45, 0.2);*/
 }
 
 .main-header{
-    padding-top: 10px;
+    padding-top: 7px;
     min-height: 74px;
 
     /* Только для оформления сетки */
@@ -53,19 +55,92 @@ h2 {
     vertical-align: middle;
 
     /* Только для оформления сетки */
-    outline: 2px solid yellow;
-    background: rgba(234, 255, 45, 0.2);
+    /*outline: 2px solid yellow;*/
+    /*background: rgba(234, 255, 45, 0.2);*/
 }
 
 .main-navigation{
-    width: 700px;
+    width: 500px;
     display: inline-block;
     vertical-align: middle;
-    min-height: 64px;
+    padding-left: 7px;
 
     /* Только для оформления сетки */
-    outline: 2px solid yellow;
-    background: rgba(234, 255, 45, 0.2);
+    /*outline: 2px solid yellow;*/
+    /*background: rgba(234, 255, 45, 0.2);*/
+}
+
+.main-navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-navigation li{
+    display: inline-block;
+    position: relative;
+}
+
+.main-navigation a{
+    display: block;
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    padding: 7px 10px 7px 14px;
+}
+
+.main-navigation a:hover{
+    background: #f7f6f3;
+    color: #323232;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.main-navigation .sub-menu{
+    display: none;
+    position: absolute;
+    background: #f7f6f4;
+    color: #323232;
+    border-radius: 5px;
+    top: 38px;
+    left: -7px;
+    padding-bottom: 5px;
+    padding-top: 3px;
+}
+
+.sub-menu li{
+    padding: 2px 0;
+}
+
+.sub-menu a{
+    text-decoration: none;
+    font-weight: normal;
+    padding: 6px 20px;
+    width: 103px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #323232;
+
+}
+
+.sub-menu li:hover, .sub-menu a:hover{
+    background: #fbded8;
+}
+
+.sub-menu li:active, .sub-menu a:active{
+    background: #f6b5a5;
+}
+
+.main-navigation li:hover .sub-menu{
+    display: block;
+}
+
+.main-navigation .sub-menu .product-new{
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 10px;
 }
 
 .header-right{
@@ -80,7 +155,6 @@ h2 {
 }
 
 .header-right-top{
-    min-height: 32px;
     margin-top: 14px;
     text-align: right;
 
@@ -89,34 +163,178 @@ h2 {
     background: rgba(0, 128, 0, 0.2);
 }
 
-.header-search{
+.header-right-top .icon{
     display: inline-block;
+    height: 32px;
+    background: #9db2a7;
+    border-radius: 20px;
+    line-height: 34px;
+    color: #ffffff;
+    text-decoration: none;
+}
 
-    /* Только для оформления сетки */
-    outline: 2px solid blue;
-    background: rgba(0, 0, 255, 0.2);
+.header-search {
+    display: inline-block;
+}
+
+.icon-search{
+    padding: 0 8px;
 }
 
 .header-login{
     display: inline-block;
-    margin-left: 10px;
-
-    /* Только для оформления сетки */
-    outline: 2px solid blue;
-    background: rgba(0, 0, 255, 0.2);
+    margin-left: 8px;
+    vertical-align: top;
 }
+
+.icon-enter::before{
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 19px;
+    margin-right: 7px;
+    margin-top: 6px;
+    background: url("../img/icon-enter1.png") no-repeat 50%;
+}
+
+.icon-enter{
+    padding: 0 15px;
+}
+
+form[name="avtorization"]{
+    display: none;
+    position: absolute;
+    right:125px;
+    top: 53px;
+    background: #f8f7f4;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.form-email input, .form-password input{
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 14px;
+    border-radius: 5px;
+    border: 1px solid #a0a0a0;
+    margin-bottom: 20px;
+    width: 240px;
+}
+
+.form-submit, .form-link{
+    display: inline-block;
+}
+
+.form-submit{
+    float: left;
+}
+
+.form-submit input{
+    background: #f16442;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn{
+    display: block;
+    background: #f16442;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.form-link{
+    float: right;
+}
+
+.form-link ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.form-link a{
+    color: #323232;
+}
+
+.icon-enter:hover{
+    color: #e4e3e0;
+    background: #f8f7f4;
+}
+
+.icon-enter:hover::before{
+    content: "";
+    background: url("../img/icon-enter2.png") no-repeat 50%;
+}
+
+.header-login:hover form[name="avtorization"]{
+    display: block;
+}
+
+
 
 .header-cart{
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 7px;
+}
 
-    /* Только для оформления сетки */
-    outline: 2px solid blue;
-    background: rgba(0, 0, 255, 0.2);
+.icon-cart::before{
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    margin-right: 7px;
+    margin-top: 6px;
+    background: url("../img/icon-cart1.png") no-repeat 50%;
+}
+
+.icon-cart{
+    padding: 0 30px 0 15px;
+}
+
+.cart-modal{
+    display: none;
+    position: absolute;
+    width: 540px;
+    background: #f8f7f4;
+    right: 0;
+    top: 50px;
+    color: #323232;
+    padding: 15px 10px 15px 15px;
+    border-radius: 5px;
+}
+
+.cart-modal table{
+    text-align: left;
+    padding: 5px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #323232;
+}
+
+.cart-price{
+    color: #999999;
+}
+
+.itogo{
+    font-size: 15px;
+    line-height: 18px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.order-submit{
+    text-decoration: none;
+    float: right;
 }
 
 .header-right-bottom{
-
     min-width: 175px;
 
     /* Только для оформления сетки */
@@ -377,7 +595,7 @@ h2 {
 
 .filter-select{
     float: left;
-    width: 193p;
+    width: 193px;
     margin-right: 15px;
 
     /* Только для оформления сетки */
