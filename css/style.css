@@ -14,13 +14,13 @@ body {
     clear: both;
 }
 
-h1 {
+h1{
     font-size: 35px;
     line-height: 41px;
     font-weight: bold;
 }
 
-h2 {
+h2{
     font-size: 24px;
     line-height: 30px;
     font-weight: bold;
@@ -59,10 +59,6 @@ h2 {
     display: inline-block;
     vertical-align: middle;
     padding-left: 7px;
-
-    /* Только для оформления сетки */
-    /*outline: 2px solid yellow;*/
-    /*background: rgba(234, 255, 45, 0.2);*/
 }
 
 .main-navigation ul{
@@ -93,13 +89,35 @@ h2 {
     text-decoration: none;
 }
 
+.main-navigation a:active{
+    box-shadow: inset 0 2px 1px 0 #696969;
+}
+
+.main-navigation .i-here{
+    display: block;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    padding: 7px 10px 7px 14px;
+    background: #d07058;
+    border-radius: 15px;
+}
+
+.main-navigation .i-here:hover{
+    background: #d07058;
+    color: #323232;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
 .main-navigation .sub-menu{
     display: none;
     position: absolute;
     background: #f7f6f4;
     color: #323232;
     border-radius: 5px;
-    top: 38px;
+    top: 100%;
     left: -7px;
     padding-bottom: 3px;
     /*padding-top: 5px;*/
@@ -126,6 +144,13 @@ h2 {
 }
 
 .sub-menu li:active, .sub-menu a:active{
+    background: #f6b5a5;
+    box-shadow: none;
+}
+
+.sub-menu .sub-i-here,
+.sub-menu .sub-i-here:hover,
+.sub-menu .sub-i-here:hover a{
     background: #f6b5a5;
 }
 
@@ -216,7 +241,6 @@ form[name="search"] input{
     padding: 6px 15px 6px 40px;
 }
 
-
 form[name="avtorization"]{
     display: none;
     position: absolute;
@@ -258,13 +282,26 @@ form[name="avtorization"]{
 
 .btn{
     display: block;
-    background: #f16442;
+    background-image: linear-gradient(to bottom, #f16743, #e84c36);
     padding: 10px 25px;
     border-radius: 20px;
     border: none;
     color: #ffffff;
     font-weight: bold;
     text-decoration: none;
+    box-shadow: 0 2px 2px 0 rgba(160,32,11, 0.7);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-image: linear-gradient(to bottom, #f48569, #ed705e);
+    box-shadow: 0 2px 2px 0 #ac1000;
+    color: #ffffff;
+}
+
+.btn:active{
+    background-image: linear-gradient(to bottom, #d84833, #e1613e);
+    box-shadow: 0 -2px 2px 0 #ac1000;
 }
 
 .form-enter-link{
@@ -282,6 +319,10 @@ form[name="avtorization"]{
     color: #323232;
 }
 
+.form-enter-link a:active, a:hover{
+    color: #e84d37;
+}
+
 .icon-enter:hover{
     color: #e4e3e0;
     background: #f8f7f4 url("../img/icon-enter2.png") no-repeat 16px center;
@@ -295,16 +336,6 @@ form[name="avtorization"]{
     display: inline-block;
     margin-left: 7px;
 }
-
-/*.icon-cart::before{*/
-    /*content: "";*/
-    /*display: inline-block;*/
-    /*width: 21px;*/
-    /*height: 20px;*/
-    /*margin-right: 7px;*/
-    /*margin-top: 6px;*/
-    /*background: url("../img/icon-cart1.png") no-repeat 50%;*/
-/*}*/
 
 .header-right-top .icon-cart{
     background: #9db2a7 url("../img/icon-cart1.png") no-repeat 14px center;
@@ -349,7 +380,6 @@ form[name="avtorization"]{
 }
 
 .header-right-bottom{
-    /*min-width: 175px;*/
     position: absolute;
     right: 0;
     top: 52px;
@@ -403,26 +433,16 @@ form[name="avtorization"]{
     margin-bottom: 38px;
     border-radius: 18px;
     padding: 16px 20px;
-    /* Только для оформления сетки */
-    /*outline: 2px solid yellow;*/
-    /*background: rgba(234, 255, 45, 0.2);*/
 }
 
 .action-left{
     float: left;
     background: url("../img/action-left.jpg") no-repeat 50%;
-
-    /* Только для оформления сетки */
-    /*outline: 2px solid blue;*/
-    /*background: rgba(0, 0, 255, 0.2);*/
 }
 
 .action-right{
     float: right;
     background: url("../img/action-right.jpg") no-repeat 50%;
-    /* Только для оформления сетки */
-    /*outline: 2px solid blue;*/
-    /*background: rgba(0, 0, 255, 0.2);*/
 }
 
 .action-caption{
@@ -448,12 +468,6 @@ form[name="avtorization"]{
     margin-bottom: 23px;
 }
 
-.product-list{
-
-    /* Только для оформления сетки */
-    /*background: rgba(255, 45, 82, 0.2);*/
-    /*outline: 2px solid red;*/
-}
 
 .product-item{
     position: relative;
@@ -463,15 +477,10 @@ form[name="avtorization"]{
     min-height: 335px;
     margin-right: 22px;
     margin-bottom: 22px;
-
 }
 
 .product-item:nth-child(4n){
     margin-right: 0;
-}
-
-.product-item{
-
 }
 
 .product-item-img img{
@@ -494,16 +503,28 @@ form[name="avtorization"]{
 .product-item__price-small{
     font-size: 30px;
     line-height: 45px;
-
 }
 
-.product-item_name{
+.product-item__name{
     font-size: 16px;
     line-height: 22px;
     font-weight: normal;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
     margin-top: 8px;
     text-align: center;
+
+}
+.product-item__name a{
+    color: #ffffff;
+}
+
+.product-item:hover{
+    background: #9db1a5;
+}
+
+.product-item:hover .product-item__name a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .about{
@@ -608,6 +629,14 @@ form[name="avtorization"]{
     text-decoration: underline;
 }
 
+.news a{
+    color: #000000;
+}
+
+.news a:hover, .news a:active{
+    color: #e84d37;
+}
+
 .subscribe{
     float: right;
     width: 548px;
@@ -700,7 +729,6 @@ form[name="avtorization"]{
 .main-footer{
     padding-top: 21px;
     padding-bottom: 25px;
-
 }
 
 .footer-social{
@@ -714,6 +742,16 @@ form[name="avtorization"]{
     opacity: 0.8;
     margin-right: 8px;
     background: #849d8f;
+
+}
+
+.social-btn:hover img{
+    opacity: 1;
+}
+
+.social-btn:active img{
+    box-shadow: inset 0 -2px 0 5px #888888;
+
 }
 
 .footer-nav{
@@ -727,6 +765,13 @@ form[name="avtorization"]{
     font-size: 13px;
     line-height: 18px;
     margin-bottom: 3px;
+}
+
+.footer-nav a:hover,
+.footer-nav a:active,
+.footer-copyright p a:hover,
+.footer-copyright p a:active{
+    color: #ffbc9e;
 }
 
 .footer-nav-left{
@@ -763,7 +808,7 @@ form[name="avtorization"]{
     line-height: 18px;
 }
 
-.footer-copyright a{
+.footer-copyright p a{
     color: #ffffff;
 }
 
@@ -855,4 +900,63 @@ form[name="avtorization"]{
     /* Только для оформления сетки */
     outline: 2px solid blue;
     background: rgba(0, 0, 255, 0.2);
+}
+
+.breadcrumbs ul,
+.pager{
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumbs li{
+    display: inline-block;
+}
+
+.breadcrumbs-link{
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+.breadcrumbs li:after{
+    content: " >> ";
+}
+
+.breadcrumbs li:last-child:after{
+    content: " ";
+}
+
+.pager li{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    vertical-align: top;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
+.pager__one{
+    border-radius: 50%;
+    background: #ffffff;
+    color: #000000;
+}
+
+.pager li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.pager li:hover{
+    background: #9db1a5;
+}
+
+.pager li a:hover{
+    color: #000000;
+}
+
+.pager li:active{
+    background: #ffffff;
 }
