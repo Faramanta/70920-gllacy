@@ -51,8 +51,10 @@
                             <a class="icon icon-enter">Вход</a>
                             <div class="header-login-form">
                                 <form name="avtorization" method="post">
-                                    <div class="form-enter-email"><input type="email" placeholder="Электронная почта"></div>
-                                    <div class="form-enter-password"><input type="password" placeholder="Пароль"></div>
+                                    <div class="form-enter-email "><input type="email" placeholder="Электронная почта"></div>
+                                    <div class="form-enter-password"><input type="password" placeholder="Пароль">
+                                        <div class="form-plaseholder">Пароль</div>
+                                    </div>
                                     <div class="form-enter-bottom clearfix">
                                         <div class="form-enter-submit"><input type="submit" value="Войти" class="btn"></div>
                                         <div class="form-enter-link">
@@ -67,25 +69,42 @@
                         </div>
                         <div class="header-cart">
                             <a href="#" class="icon icon-cart">Пусто</a>
-                            <div class="cart-modal">
-                                <table>
-                                    <tr>
-                                        <td><img src="img/cart-modal1.png"></td>
-                                        <td>Пломбир с апельсиновым джемом</td>
-                                        <td>1,5 кг х <span class="cart-price">200 руб.</span></td>
-                                        <td>300 руб.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><img src="img/cart-modal2.png"></td>
-                                        <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                                        <td>1,5 кг х <span class="cart-price">300 руб.</span></td>
-                                        <td>450 руб.</td>
-                                    </tr>
-                                </table>
-                                <hr>
-                                <p class="itogo">Итого: 750 руб.</p>
-                                <a href="#" class="btn order-submit">Оформить заказ</a>
-                            </div>
+                            <!--<div class="cart-modal-container">-->
+                                <!--<div class="cart-modal">-->
+                                    <!--<ul class='cart-products'>-->
+                                        <!--<li class='cart-product-item'>-->
+                                            <!--<a href="" class="cart-product-inner cart-product-item__delete"></a>-->
+                                            <!--<div class="cart-product-inner cart-product-item__img">-->
+                                                <!--<img src="img/cart-modal1.png" alt="">-->
+                                            <!--</div>-->
+                                            <!--<h4 href="" class="cart-product-inner cart-product-item__name">-->
+                                                <!--<a href="">Пломбир с апельсиновым джемом</a>-->
+                                            <!--</h4>-->
+                                            <!--<p class="cart-product-inner cart-product-item__info">-->
+                                                <!--1.5кг x <span>200 руб</span>-->
+                                            <!--</p>-->
+                                            <!--<p class="cart-product-inner cart-product-item__price">300 руб</p>-->
+                                        <!--</li>-->
+                                        <!--<li class='cart-product-item'>-->
+                                            <!--<a href="" class="cart-product-inner cart-product-item__delete">-->
+                                            <!--</a>-->
+                                            <!--<div class="cart-product-inner cart-product-item__img">-->
+                                                <!--<img src="img/cart-modal2.png" alt="">-->
+                                            <!--</div>-->
+                                            <!--<h4 href="" class="cart-product-inner cart-product-item__name">-->
+                                                <!--<a href="">Клубничный пломбир с присыпкой из белого шоколада</a>-->
+                                            <!--</h4>-->
+                                            <!--<p class="cart-product-inner cart-product-item__info">-->
+                                                <!--1.5кг x <span>300 руб</span>-->
+                                            <!--</p>-->
+                                            <!--<p class="cart-product-inner cart-product-item__price">450 руб</p>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                    <!--<hr>-->
+                                    <!--<p class="sum">Итого: 750 руб.</p>-->
+                                    <!--<a href="#" class="btn order-submit">Оформить заказ</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
                         </div>
                     </div>
 
@@ -266,6 +285,17 @@
                     <button class="btn contacts-btn">Форма обратной связи</button>
                 </div>
             </div>
+        </div>
+
+        <div class="feedback">
+            <h2>Мы обязательно вам ответим!</h2>
+            <div class="feedback-close"></div>
+            <form name="feedback-form">
+                <div class="form-feedback-name"><input type="text" placeholder="Как вас зовут?"></div>
+                <div class="form-feedback-email"><input type="text" placeholder="Ваша почта для ответа"></div>
+                <div class="form-feedback-text"><textarea placeholder="Напишите что-нибудь..."></textarea></div>
+                <button class="btn feedback-send">Отправить</button>
+            </form>
         </div>
 
         <footer class="main-footer clearfix">
