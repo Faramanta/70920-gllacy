@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Глейси</title>
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -50,16 +50,14 @@
                         <div class="header-login">
                             <a class="icon icon-enter">Вход</a>
                             <div class="header-login-form">
-                                <form name="avtorization" method="post">
+                                <form name="avtorization" method="post" class="form-avtorization">
                                     <div class="form-enter-email "><input type="email" placeholder="Электронная почта"></div>
-                                    <div class="form-enter-password"><input type="password" placeholder="Пароль">
-                                        <div class="form-plaseholder">Пароль</div>
-                                    </div>
+                                    <div class="form-enter-password"><input type="password" placeholder="Пароль"></div>
                                     <div class="form-enter-bottom clearfix">
                                         <div class="form-enter-submit"><input type="submit" value="Войти" class="btn"></div>
                                         <div class="form-enter-link">
                                             <ul>
-                                                <li><a href="#">Забыли пароль</a></li>
+                                                <li><a href="#">Забыли пароль?</a></li>
                                                 <li><a href="#">Новая регистрация</a></li>
                                             </ul>
                                         </div>
@@ -71,8 +69,8 @@
                             <a href="#" class="icon icon-cart">Пусто</a>
                             <!--<div class="cart-modal-container">-->
                                 <!--<div class="cart-modal">-->
-                                    <!--<ul class='cart-products'>-->
-                                        <!--<li class='cart-product-item'>-->
+                                    <!--<ul class="cart-products">-->
+                                        <!--<li class="cart-product-item">-->
                                             <!--<a href="" class="cart-product-inner cart-product-item__delete"></a>-->
                                             <!--<div class="cart-product-inner cart-product-item__img">-->
                                                 <!--<img src="img/cart-modal1.png" alt="">-->
@@ -85,7 +83,7 @@
                                             <!--</p>-->
                                             <!--<p class="cart-product-inner cart-product-item__price">300 руб</p>-->
                                         <!--</li>-->
-                                        <!--<li class='cart-product-item'>-->
+                                        <!--<li class="cart-product-item">-->
                                             <!--<a href="" class="cart-product-inner cart-product-item__delete">-->
                                             <!--</a>-->
                                             <!--<div class="cart-product-inner cart-product-item__img">-->
@@ -274,7 +272,7 @@
 
         <div class="contacts-main clearfix">
             <!--<img src="img/map.jpg" width="1200" height="430" alt="">-->
-            <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=HncKjvje9j0Yzf5-serEYbDzwl6L-phk&width=100%&height=430&lang=ru_RU&sourceType=constructor"></script>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=nLfLHXre-q6Z6iLkaUOHzjY74zfPQEkw&width=100%&height=430&lang=ru_RU&sourceType=constructor&scroll=true"></script>
             <div class="container">
                 <div class="contacts">
                     <p>Адрес главного офиса и офлайн магазина:</p>
@@ -291,9 +289,9 @@
             <h2>Мы обязательно вам ответим!</h2>
             <div class="feedback-close"></div>
             <form name="feedback-form">
-                <div class="form-feedback-name"><input type="text" placeholder="Как вас зовут?"></div>
-                <div class="form-feedback-email"><input type="text" placeholder="Ваша почта для ответа"></div>
-                <div class="form-feedback-text"><textarea placeholder="Напишите что-нибудь..."></textarea></div>
+                <div class="form-feedback-name"><input type="text" placeholder="Как вас зовут?" name="name" ></div>
+                <div class="form-feedback-email"><input type="text" placeholder="Ваша почта для ответа?" name="email"></div>
+                <div class="form-feedback-text"><textarea placeholder="Напишите что-нибудь..." ></textarea></div>
                 <button class="btn feedback-send">Отправить</button>
             </form>
         </div>
@@ -333,5 +331,62 @@
             </div>
         </footer>
     </div>
+
+    <!--<div class="shadow"></div>-->
+
+    <script>
+        var link = document.querySelector(".contacts-btn");
+        var popup = document.querySelector(".feedback");
+        var close = popup.querySelector(".feedback-close");
+        var form = popup.querySelector("form");
+        var login = popup.querySelector("[name=name]");
+        var email = popup.querySelector("[name=email");
+        var storage = localStorage.getItem("login");
+
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+//            popup.classList.add("shadow");
+            popup.classList.add("feedback-show");
+
+            if (storage) {
+                login.value = storage;
+                email.focus();
+            } else {
+                login.focus();
+            }
+        });
+
+        close.addEventListener("click", function(event) {
+           event.preventDefault();
+            popup.classList.remove("feedback-show");
+//            popup.classList.remove("shadow");
+            popup.classList.remove("feedback-error");
+
+        });
+
+        form.addEventListener("submit", function(event) {
+            if (!login.value || !email.value){
+                event.preventDefault();
+                popup.classList.remove("feedback-error");
+                popup.offsetWidth = popup.offsetWidth;
+                popup.classList.add("feedback-error");
+            } else {
+                localStorage.setItem("login", login.value);
+            }
+        });
+
+        window.addEventListener("keydown", function(event) {
+           if (event.keyCode === 27) {
+               if (popup.classList.contains("feedback-show")) {
+                   popup.classList.remove("feedback-show");
+//                   popup.classList.remove("shadow");
+                   popup.classList.remove("feedback-error");
+               }
+           }
+        });
+
+
+
+    </script>
 </body>
 </html>

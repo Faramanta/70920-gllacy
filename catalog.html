@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>GllacyShop</title>
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -32,7 +32,7 @@
             </nav>
 
             <div class="header-right">
-                <div class="header-right-top">
+                <div class="header-right-top header-right-top-catalog">
                     <div class="header-search">
                         <div class="icon icon-search"></div>
                         <div class="search-modal">
@@ -63,14 +63,14 @@
                     <div class="header-cart">
                         <a href="#" class="icon icon-cart cart-full">2 товара</a>
                         <div class="cart-modal-container">
-                            <div class="cart-modal">
-                                <ul class='cart-products'>
-                                    <li class='cart-product-item'>
-                                        <a href="" class="cart-product-inner cart-product-item__delete"></a>
+                            <div class="cart-modal clearfix">
+                                <ul class="cart-products">
+                                    <li class="cart-product-item">
+                                        <a href="#" class="cart-product-inner cart-product-item__delete"></a>
                                         <div class="cart-product-inner cart-product-item__img">
                                             <img src="img/cart-modal1.png" alt="">
                                         </div>
-                                        <h4 href="" class="cart-product-inner cart-product-item__name">
+                                        <h4 class="cart-product-inner cart-product-item__name">
                                             <a href="">Пломбир с апельсиновым джемом</a>
                                         </h4>
                                         <p class="cart-product-inner cart-product-item__info">
@@ -78,13 +78,13 @@
                                         </p>
                                         <p class="cart-product-inner cart-product-item__price">300 руб</p>
                                     </li>
-                                    <li class='cart-product-item'>
+                                    <li class="cart-product-item">
                                         <a href="" class="cart-product-inner cart-product-item__delete">
                                             </a>
                                         <div class="cart-product-inner cart-product-item__img">
                                             <img src="img/cart-modal2.png" alt="">
                                         </div>
-                                        <h4 href="" class="cart-product-inner cart-product-item__name">
+                                        <h4 class="cart-product-inner cart-product-item__name">
                                             <a href="">Клубничный пломбир с присыпкой из белого шоколада</a>
                                         </h4>
                                         <p class="cart-product-inner cart-product-item__info">
@@ -93,7 +93,7 @@
                                         <p class="cart-product-inner cart-product-item__price">450 руб</p>
                                     </li>
                                 </ul>
-                                <hr>
+                                <div class="cart-after"></div>
                                 <p class="sum">Итого: 750 руб.</p>
                                 <a href="#" class="btn order-submit">Оформить заказ</a>
                             </div>
@@ -212,7 +212,9 @@
                             <a href="#"><img src="img/product-item1.jpg" width="267" height="267" alt=""></a>
                         </div>
                         <p class="product-item__price">310&#8381;<span class="product-item__price-small">/кг</span></p>
-                        <a href="#"><h3 class="product-item__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></a>
+                        <a href="#">
+                            <h3 class="product-item__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                        </a>
                         <a class="btn quick-view">Быстрый просмотр</a>
                     </div>
                 </article>
@@ -341,16 +343,18 @@
 
         <div class="container">
             <ul class="pager">
-                <li class="pager__first"><span></span></li>
+                <li class="pager__first"><img src="img/pager__first.png" height="14" width="9"></li>
                 <li class="pager__one"><span>1</span></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li class="pager__last"><a></a></li>
+                <li class="pager__last"><a><img src="img/pager__last.png" height="14" width="9"></a></li>
             </ul>
         </div>
+
     </main>
+    <div class="after-main"></div>
 
     <footer class="main-footer clearfix">
         <div class="container ">
