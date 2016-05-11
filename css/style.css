@@ -64,10 +64,11 @@ h2{
 
 .main-navigation li{
     display: inline-block;
+    vertical-align: top;
     position: relative;
 }
 
-.main-navigation a{
+.main-navigation .main-navigation__link{
     display: block;
     color: #ffffff;
     text-decoration: none;
@@ -77,7 +78,7 @@ h2{
     padding: 7px 11px 7px 13px;
 }
 
-.main-navigation a::after{
+.main-navigation .main-navigation__link::after{
     content: "";
     height: 1px;
     position: absolute;
@@ -148,7 +149,8 @@ h2{
     padding-top: 2px;
 }
 
-.sub-menu a{
+.sub-menu .sub-menu__link{
+    display: block;
     text-decoration: none;
     font-weight: normal;
     padding: 4px 20px;
@@ -158,11 +160,13 @@ h2{
     color: #323232;
 }
 
-.sub-menu li:hover, .sub-menu a:hover{
+.sub-menu li:hover,
+.sub-menu a:hover{
     background: #fbded8;
 }
 
-.sub-menu li:active, .sub-menu a:active{
+.sub-menu li:active,
+.sub-menu a:active{
     background: #f6b5a5;
     box-shadow: none;
 }
@@ -173,18 +177,18 @@ h2{
     background: #f6b5a5;
 }
 
-.main-navigation li:hover .sub-menu{
+.main-navigation__item:hover .sub-menu{
     display: block;
 }
 
-.main-navigation .sub-menu .product-new{
+.main-navigation .product-new{
     font-weight: bold;
     padding-top: 6px;
     padding-bottom: 10px;
     position: relative;
 }
 
-.main-navigation .sub-menu .product-new::after{
+.main-navigation .product-new::after{
     content: "";
     height: 1px;
     position: absolute;
@@ -207,6 +211,7 @@ h2{
 
 .header-right-top .icon{
     display: inline-block;
+    vertical-align: top;
     background: #9db2a7;
     border-radius: 20px;
     color: #ffffff;
@@ -217,10 +222,12 @@ h2{
 
 .header-search {
     display: inline-block;
+    vertical-align: top;
 }
 
 .header-right-top .icon-search{
     display: inline-block;
+    vertical-align: top;
     width: 33px;
     height: 33px;
     background: rgba(255,255,255,0.2) url("../img/icon-search1.png") no-repeat center;
@@ -346,6 +353,7 @@ form[name="avtorization"]{
 
 .form-enter-submit, .form-enter-link{
     display: inline-block;
+    vertical-align: top;
 }
 
 .form-enter-submit{
@@ -422,6 +430,7 @@ form[name="avtorization"]{
 
 .header-cart{
     display: inline-block;
+    vertical-align: top;
     margin-left: 7px;
 }
 
@@ -533,6 +542,7 @@ form[name="avtorization"]{
 
 .slide-btn{
     display: inline-block;
+    vertical-align: top;
     padding: 7px 40px 10px 41px;
     font-weight: 600;
     font-size: 32px;
@@ -551,6 +561,7 @@ form[name="avtorization"]{
 
 .slider-controls label{
     display: inline-block;
+    vertical-align: top;
     width: 17px;
     height: 17px;
     margin-right: 8px;
@@ -622,6 +633,9 @@ form[name="avtorization"]{
     line-height: 41px;
     font-weight: bold;
     margin-top: 1px;
+    height: 41px;
+    overflow: hidden;
+    width: 90%;
 }
 
 .action-text{
@@ -629,7 +643,9 @@ form[name="avtorization"]{
     line-height: 22px;
     font-weight: bold;
     margin-top: -19px;
-    margin-bottom: 43px;
+    /*margin-bottom: 43px;*/
+    height: 66px;
+    min-height: 44px;overflow: hidden;
 }
 
 .action .btn{
@@ -749,6 +765,11 @@ a .product-item__name{
     border-radius: 20px;
 }
 
+.about-item{
+    display: inline-block;
+    vertical-align: top;
+}
+
 .about-caption{
     font-size: 24px;
     line-height: 30px;
@@ -756,6 +777,7 @@ a .product-item__name{
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 9px;
+    padding-right: 40px;
 }
 
 .about-item p{
@@ -816,11 +838,15 @@ a .product-item__name{
 .news p{
     font-weight: normal;
     margin: 0;
+
 }
 
 .news h2{
     margin-top: 4px;
     text-decoration: underline;
+    height: 90px;
+    min-height: 90px;
+    overflow: hidden;
 }
 
 .news a{
@@ -848,11 +874,17 @@ a .product-item__name{
 }
 
 .subscribe p{
-    margin: 0 0 36px 0;
+    margin: 0 0 13px 0;
+    height: 88px;
+    min-height: 66px;
+    overflow: hidden;
 }
+
 .subscribe-container input{
     display: inline-block;
+    vertical-align: top;
 }
+
 .subscribe-container input[type="email"]{
     padding-top: 11px;
     padding-bottom: 10px;
@@ -860,7 +892,7 @@ a .product-item__name{
     border-radius: 5px;
     border: 1px solid #a0a0a0;
     margin-bottom: 20px;
-    width: 352px;
+    width: 350px;
     margin-right: 8px;
 }
 
@@ -929,8 +961,6 @@ a .product-item__name{
     padding-bottom: 25px;
 }
 
-.main-footer
-
 .footer-social{
     float: left;
     margin-top: 16px;
@@ -940,7 +970,7 @@ a .product-item__name{
 
 .footer-social a{
     display: inline-block;
-    /*font-size: 16px;*/
+    vertical-align: top;
     margin-right: 9px;
 }
 
@@ -1003,11 +1033,12 @@ a .product-item__name{
 .footer-nav-left{
     margin-right: 27px;
     display: inline-block;
+    vertical-align: top;
 }
 
 .footer-nav-right{
     display: inline-block;
-
+    vertical-align: top;
 }
 
 .footer-nav-left .heart{
@@ -1017,6 +1048,7 @@ a .product-item__name{
 .footer-nav-left .heart::before{
     content: "";
     display: inline-block;
+    vertical-align: top;
     width: 15px;
     height: 13px;
     padding-left: 7px;
@@ -1194,6 +1226,7 @@ a .product-item__name{
 .radio-block input[type="radio"]+ .radio-indicator{
     position: absolute;
     display: inline-block;
+    vertical-align: top;
     top: -1px;
     left: 3px;
     width: 20px;
@@ -1240,6 +1273,7 @@ a .product-item__name{
 .checkbox-block input[type="checkbox"]+ .checkbox-indicator{
     position: absolute;
     display: inline-block;
+    vertical-align: top;
     top: -1px;
     left: 14px;
     width: 18px;
@@ -1310,6 +1344,7 @@ a .product-item__name{
 
 .breadcrumbs li{
     display: inline-block;
+    vertical-align: top;
 }
 
 .breadcrumbs-link{
@@ -1321,6 +1356,7 @@ a .product-item__name{
 .breadcrumbs li:after{
     content: "";
     display: inline-block;
+    vertical-align: middle;
     background-image: url("../img/bread.png");
     width: 6px;
     height: 5px;
@@ -1333,8 +1369,9 @@ a .product-item__name{
     display:none;
 }
 
-.pager li{
+.pager__item{
     display: inline-block;
+    vertical-align: top;
     width: 25px;
     height: 25px;
     text-align: center;
@@ -1344,27 +1381,29 @@ a .product-item__name{
     margin-left: 1px;
 }
 
-.pager__one{
+.pager__item:hover{
+    background: #9db1a5;
+}
+
+.pager__one,
+.pager__one:hover{
     border-radius: 50%;
     background: #ffffff;
     color: #000000;
 }
 
-.pager li a{
+.pager-link{
     text-decoration: none;
     color: #ffffff;
 }
 
-.pager li:hover{
-    background: #9db1a5;
 
-}
 
-.pager li a:hover{
+.pager-link:hover{
     color: #ffffff;
 }
 
-.pager li:active{
+.pager__item:active{
     background: #ffffff;
 }
 
@@ -1408,7 +1447,6 @@ a .product-item__name{
     font-size: 13px;
     line-height: 16px;
     color: #323232;
-
 }
 
 .cart-product-item__name a{
@@ -1422,8 +1460,6 @@ a .product-item__name{
 .cart-product-inner span{
     color: #999999;
 }
-
-
 
 .cart-product-item__img{
     padding: 0px 5px 3px 3px;
