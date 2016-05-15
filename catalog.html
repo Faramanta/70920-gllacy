@@ -18,27 +18,31 @@
             <nav class="main-navigation">
                 <ul class="main-navigation__list">
                     <li class="main-navigation__item">
-                        <a href="catalog.html" class="main-navigation__link i-here">Каталог</a>
+                        <a href="catalog.html" class="main-navigation__link active">Каталог</a>
                         <ul class="sub-menu">
                             <li class="sub-menu__item">
                                 <a href="catalog.html" class="sub-menu__link product-new">Новинки</a>
                             </li>
-                            <li class="sub-menu__item sub-i-here">
-                                <a href="catalog.html" class="sub-menu__link ">Сливочное</a>
+                            <li class="sub-menu__item active">
+                                <a href="catalog.html" class="sub-menu__link active">Сливочное</a>
                             </li>
                             <li class="sub-menu__item">
                                 <a href="catalog.html" class="sub-menu__link">Щербеты</a>
                             </li>
                             <li class="sub-menu__item">
-                                <a href="catalog.html" class="sub-menu__link">Фруктовый лед</a>
+                                <a href="catalog.html" class="sub-menu__link ">Фруктовый лед</a>
                             </li>
                             <li class="sub-menu__item">
                                 <a href="catalog.html" class="sub-menu__link">Мелорин</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="main-navigation__item"><a href="#" class="main-navigation__link">Доставка и оплата</a></li>
-                    <li class="main-navigation__item"><a href="#" class="main-navigation__link">О Компании</a></li>
+                    <li class="main-navigation__item">
+                        <a href="#" class="main-navigation__link">Доставка и оплата</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#" class="main-navigation__link">О Компании</a>
+                    </li>
                 </ul>
             </nav>
 
@@ -56,7 +60,7 @@
                     <div class="header-login">
                         <a class="icon icon-enter">Вход</a>
                         <div class="header-login-form">
-                            <form name="avtorization" method="post">
+                            <form name="autorization" method="post">
                                 <div class="form-enter-email">
                                     <input type="email" placeholder="Электронная почта">
                                 </div>
@@ -157,12 +161,14 @@
                     <div class="filter-top clearfix">
                         <div class="filter-select">
                             <p><label for="sort">Сортировка:</label></p>
-                            <select id="sort">
-                                <option value="pop" id="pop">по популярности</option>
-                                <option value="cheap" id="cheap">сначала недорогие</option>
-                                <option value="pop" id="expensive">сначала дорогие</option>
-                                <option value="pop" id="fatness">по жирности</option>
-                            </select>
+                            <div class="popular-select">
+                                <select id="sort" class="popular">
+                                    <option value="pop" id="pop">по популярности</option>
+                                    <option value="cheap" id="cheap">сначала недорогие</option>
+                                    <option value="pop" id="expensive">сначала дорогие</option>
+                                    <option value="pop" id="fatness">по жирности</option>
+                                </select>
+                            </div>
                         </div>
 
                         <div class="filter-price">
@@ -435,7 +441,10 @@
                     <a href="#" class="pager-link">5</a>
                 </li>
                 <li class="pager__item pager__last">
-                    <a href="#"><img src="img/pager__last.png" height="14" width="9" alt="last-page"></a></li>
+                    <a href="#">
+                        <img src="img/pager__last.png" height="14" width="9" alt="last-page">
+                    </a>
+                </li>
             </ul>
         </div>
 

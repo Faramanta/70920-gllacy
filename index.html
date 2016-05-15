@@ -42,8 +42,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="main-navigation__item"><a href="#" class="main-navigation__link">Доставка и оплата</a></li>
-                    <li class="main-navigation__item"><a href="#" class="main-navigation__link">О Компании</a></li>
+                    <li class="main-navigation__item">
+                        <a href="#" class="main-navigation__link">Доставка и оплата</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#" class="main-navigation__link">О Компании</a>
+                    </li>
                 </ul>
                 </nav>
 
@@ -52,8 +56,8 @@
                         <div class="header-search">
                             <div class="icon icon-search"></div>
                             <div class="search-modal">
-                                <form name="search">
-                                    <input type="text" placeholder="Что ищем?">
+                                <form name="search" class="search">
+                                    <input id="form-search" type="text" placeholder="Что ищем?">
                                 </form>
                             </div>
                         </div>
@@ -61,15 +65,25 @@
                         <div class="header-login">
                             <a class="icon icon-enter">Вход</a>
                             <div class="header-login-form">
-                                <form name="avtorization" method="post" class="form-avtorization">
-                                    <div class="form-enter-email "><input type="email" placeholder="Электронная почта"></div>
-                                    <div class="form-enter-password"><input type="password" placeholder="Пароль"></div>
+                                <form name="autorization" method="post" class="form-autorization">
+                                    <div class="form-enter-email ">
+                                        <input type="email" placeholder="Электронная почта">
+                                    </div>
+                                    <div class="form-enter-password">
+                                        <input type="password" placeholder="Пароль">
+                                    </div>
                                     <div class="form-enter-bottom clearfix">
-                                        <div class="form-enter-submit"><input type="submit" value="Войти" class="btn"></div>
+                                        <div class="form-enter-submit">
+                                            <input type="submit" value="Войти" class="btn">
+                                        </div>
                                         <div class="form-enter-link">
                                             <ul>
-                                                <li><a href="#">Забыли пароль?</a></li>
-                                                <li><a href="#">Новая регистрация</a></li>
+                                                <li>
+                                                    <a href="#">Забыли пароль?</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Новая регистрация</a>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -199,20 +213,22 @@
 
             <div class="about clearfix">
                 <div class="container">
-                    <p class="about-caption">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
-                    <div class="about-item about-left-top">
-                        <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-                    </div>
-                    <div class="about-item about-right-top">
-                        <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-                    </div>
+                    <div class="about-box clearfix">
+                        <p class="about-caption">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+                        <div class="about-item about-left-top">
+                            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                        </div>
+                        <div class="about-item about-right-top">
+                            <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                        </div>
 
-                    <div class="about-item about-left-bottom">
-                        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-                    </div>
+                        <div class="about-item about-left-bottom">
+                            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+                        </div>
 
-                    <div class="about-item about-right-bottom">
-                        <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+                        <div class="about-item about-right-bottom">
+                            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -222,7 +238,7 @@
                     <article class="news">
                         <p>Новое в нашем блоге</p>
                         <a href="#">
-                            <h2>10  способов сервировки фруктовых щербетов к столу</h2>
+                            <h2>10 способов сервировки фруктовых щербетов к столу</h2>
                         </a>
                     </article>
 
@@ -242,6 +258,7 @@
         <div class="contacts-main clearfix">
 
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=nLfLHXre-q6Z6iLkaUOHzjY74zfPQEkw&width=100%&height=430&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+
             <div class="container">
                 <div class="contacts">
                     <p>Адрес главного офиса и офлайн магазина:</p>
@@ -249,7 +266,7 @@
                     <p>Для заказов по телефону:</p>
                     <p class="contact-bold contacts-phone">8 812 450-25-25</p>
                     <p>(с 10 до 20 ежедневно)</p>
-                    <button class="btn contacts-btn">Форма обратной связи</button>
+                    <a href="feedback.html" class="btn contacts-btn">Форма обратной связи</a>
                 </div>
             </div>
         </div>
@@ -257,16 +274,22 @@
         <div class="feedback">
             <h2>Мы обязательно вам ответим!</h2>
             <div class="feedback-close"></div>
-            <form name="feedback-form">
-                <div class="form-feedback-name">
-                    <input type="text" placeholder="Как вас зовут?" name="name" >
+            <form name="feedback-form" class="feedback-form">
+                <div class="feedback-block form-feedback-name">
+                    <input type="text" placeholder="Как вас зовут?" name="name" id="feedback-name">
+                    <label for="feedback-name">Как вас зовут?</label>
                 </div>
-                <div class="form-feedback-email">
-                    <input type="text" placeholder="Ваша почта для ответа?" name="email">
+
+                <div class=" feedback-block form-feedback-email">
+                    <input type="text" placeholder="Ваша почта для ответа?" name="email" id="feedback-email">
+                    <label for="feedback-email">Ваша почта для ответа?</label>
                 </div>
-                <div class="form-feedback-text">
-                    <textarea placeholder="Напишите что-нибудь..." ></textarea>
+
+                <div class="feedback-block form-feedback-text">
+                    <textarea placeholder="Напишите что-нибудь..." id="feedback-textarea"></textarea>
+                    <label for="feedback-textarea">Напишите что-нибудь...?</label>
                 </div>
+
                 <button class="btn feedback-send">Отправить</button>
             </form>
         </div>
@@ -309,61 +332,7 @@
         </footer>
     </div>
 
-    <!--<div class="shadow"></div>-->
-
-    <script>
-        var link = document.querySelector(".contacts-btn");
-        var popup = document.querySelector(".feedback");
-        var close = popup.querySelector(".feedback-close");
-        var form = popup.querySelector("form");
-        var login = popup.querySelector("[name=name]");
-        var email = popup.querySelector("[name=email");
-        var storage = localStorage.getItem("login");
-
-        link.addEventListener("click", function(event) {
-            event.preventDefault();
-//            popup.classList.add("shadow");
-            popup.classList.add("feedback-show");
-
-            if (storage) {
-                login.value = storage;
-                email.focus();
-            } else {
-                login.focus();
-            }
-        });
-
-        close.addEventListener("click", function(event) {
-           event.preventDefault();
-            popup.classList.remove("feedback-show");
-//            popup.classList.remove("shadow");
-            popup.classList.remove("feedback-error");
-
-        });
-
-        form.addEventListener("submit", function(event) {
-            if (!login.value || !email.value){
-                event.preventDefault();
-                popup.classList.remove("feedback-error");
-                popup.offsetWidth = popup.offsetWidth;
-                popup.classList.add("feedback-error");
-            } else {
-                localStorage.setItem("login", login.value);
-            }
-        });
-
-        window.addEventListener("keydown", function(event) {
-           if (event.keyCode === 27) {
-               if (popup.classList.contains("feedback-show")) {
-                   popup.classList.remove("feedback-show");
-//                   popup.classList.remove("shadow");
-                   popup.classList.remove("feedback-error");
-               }
-           }
-        });
-
-
-
-    </script>
+    <div class="shadow"></div>
+    <script src="js/script.js"></script>
 </body>
 </html>
