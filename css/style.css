@@ -96,7 +96,7 @@ h2{
     text-decoration: none;
 }
 
-.main-navigation__link:hover::after{            /*убирает подчеркивание в главном меню при наведении*/
+.main-navigation__link:hover::after{            
     opacity: 0;
 }
 
@@ -790,13 +790,11 @@ form[name="autorization"]{
 
 .about-left-top,
 .about-left-bottom{
-    float: left;
     width: 480px;
 }
 
 .about-right-top,
 .about-right-bottom{
-    float: right;
     width: 480px;
 }
 
