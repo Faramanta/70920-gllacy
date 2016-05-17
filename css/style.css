@@ -491,6 +491,7 @@ form[name="autorization"]{
 }
 
 .site-wrapper{
+    min-width: 1200px;
     background-color: #849d8f;
     background-image: url("../img/slider3.png");
     background-repeat: no-repeat;
@@ -503,8 +504,6 @@ form[name="autorization"]{
 .site-wrapper-feedback{
     background-color: #849d8f;
 }
-
-
 
 .site-wrapper:before,
 .site-wrapper:after{
@@ -590,6 +589,7 @@ form[name="autorization"]{
     background-color: #8996a6;
     background-image: url("../img/slider2.png");
 }
+
 #btn-3:checked ~ .site-wrapper{
     background-color: #9d8b84;
     background-image: url("../img/slider3.png");
